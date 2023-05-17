@@ -1,0 +1,87 @@
+/* Style the input fields */
+body{
+  background-image:/* linear-gradient(rgba(0,0,0,0.5),black), */ url(../img/pio1.jpg);
+  background-position: center;
+  background-size:cover;
+  height:50%;
+ 
+}
+input[type="text"], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+/* Style the file input field */
+.custom-file-label::after {
+  content: "Choose file";
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Add hover effects to form elements */
+input:hover, textarea:hover, select:hover, .custom-file-input:hover {
+  border: 1px solid #aaa;
+}
+
+/* Add animation to form elements */
+input, textarea, select, .custom-file-input {
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+/* Add flex properties to form rows */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Add animation on focus to input fields */
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  animation: input-focus 0.3s ease-in-out;
+}
+
+/* Add hover effect to input fields */
+.form-control:hover {
+  border-color: #80bdff;
+}
+
+/* Input focus animation */
+@keyframes input-focus {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+label{
+  font-size:20px;
+  color:white;
+}
+h1{
+  text-align: center;
+  color:whitesmoke;
+  
+}

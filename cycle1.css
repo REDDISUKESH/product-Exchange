@@ -1,0 +1,97 @@
+body{
+    background-color:lightyellow;
+}
+#products{
+    text-align: center;
+}
+#products .pro-container{
+    display:flex;
+    justify-content: space-between;
+    padding:15px;
+    flex-wrap: wrap;
+}
+#products h1,h2{
+    font-size:36px;
+}
+#products h1{
+    color:crimson;
+}
+#products h2{
+    color:darkgreen;
+}
+#products .pro{
+    width:23%;
+    min-width: 100px;
+    min-height: 50vh;
+    padding:10px 12px;
+    border:1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+    margin:15px 0;
+    transition:0.2s ease;
+}
+#products .pro img{
+    width:100%;
+    border-radius: 10px;
+}
+#products .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.5);
+}
+#products .pro .des{
+    text-align: center;
+    padding:10px 0;
+
+}
+#products .pro .des span{
+    color:chartreuse;
+    font-size: 36px;
+}
+#products .pro .des p{
+    padding:0px;
+    color:black;
+    font-size: 30px;
+}
+/* #products .pro .des span  {
+    display: block;
+    padding: 5px 10px;
+    border: 2px solid chartreuse;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+#products .pro .des span:hover, 
+#products .pro .des h4:hover {
+    background-color: chartreuse;
+    color: black;
+} */
+#products .pro .des a.buy-btn {
+    display: none;
+    background-color:red;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  #products .pro:hover .des a.buy-btn {
+    display: block;
+  }
+  
+  #products .pro:hover .des p {
+    color: blue;
+  }
+  
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .feature:hover {
+    transform: scale(1.1);
+  }
+  
